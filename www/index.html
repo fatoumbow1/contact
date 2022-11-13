@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ContacTel</title>
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="listPage" data-role="page">
+        <div data-role="header">
+            <h1 data-icon="contact'Tel"></h1>
+        </div>
+        <div role="main" class="ui-content">
+            <a href="#addPage" data-role="button" data-icon="plus data-iconpos="right">Ajouter</a>
+            <ul id="contactList" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Rechercher">
+                <li>
+                    <a href="#">
+                        <img src="C:\Users\USER\OneDrive\Documents\avatar-hijab.jpg"  alt="avatar-contact">
+                        <h1>Faty DIOP</h1>
+                        <p> 77 000 00 00</p>
+                    </a>
+                </li>
+
+            </ul>
+        
+            
+        </div>
+       <div data-role="footer" data-position="fixed">
+           <h1> M1IABD &copy; Octobre 2022</h1>
+        </div>
+    </div>
+    <div id="addPage" data-role="page">
+        <div data-role="header">
+            <a href="#" data-rel="home" data-iconpos="notext">Précédent</a>
+            <h1>Veillez ajouter un contact</h1>
+        </div>
+        
+        <form>
+            <input type="text" id="prenom" placeholder="Prénom">
+            <input type="text" id="nom" placeholder="Nom">
+            <input type="tel" id="telephone" placeholder="Téléphone">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="adresse" placeholder="Adresse">
+            <input type="button" value="Ajouter"  data-icon="plus" data-iconpos='right'>
+        </form>
+        <div data-role="footer" data-position="fixed">
+           <h1> M1IABD &copy; Octobre 2022</h1>
+        </div>
+    
+
+</body>
+
+
+</html>
